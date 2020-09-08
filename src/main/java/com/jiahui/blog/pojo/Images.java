@@ -2,26 +2,20 @@ package com.jiahui.blog.pojo;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tb_looper")
-public class Looper {
+@Table(name = "tb_images")
+public class Images {
 
   	@Id
 	private String id;
 
-  	@Column(name = "title" )
-	private String title;
+  	@Column(name = "user_id" )
+	private String userId;
 
-  	@Column(name = "`order`" )
-	private long order;
+  	@Column(name = "url" )
+	private String url;
 
   	@Column(name = "state" )
 	private String state;
-
-  	@Column(name = "target_url" )
-	private String targetUrl;
-
-  	@Column(name = "image_url" )
-	private String imageUrl;
 
   	@Column(name = "create_time" )
 	private java.sql.Timestamp createTime;
@@ -39,21 +33,21 @@ public class Looper {
   }
 
 
-  public String getTitle() {
-    return title;
+  public String getUserId() {
+    return userId;
   }
 
-  public void setTitle(String title) {
-    this.title = title;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
 
-  public long getOrder() {
-    return order;
+  public String getUrl() {
+    return url;
   }
 
-  public void setOrder(long order) {
-    this.order = order;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 
@@ -63,24 +57,6 @@ public class Looper {
 
   public void setState(String state) {
     this.state = state;
-  }
-
-
-  public String getTargetUrl() {
-    return targetUrl;
-  }
-
-  public void setTargetUrl(String targetUrl) {
-    this.targetUrl = targetUrl;
-  }
-
-
-  public String getImageUrl() {
-    return imageUrl;
-  }
-
-  public void setImageUrl(String imageUrl) {
-    this.imageUrl = imageUrl;
   }
 
 

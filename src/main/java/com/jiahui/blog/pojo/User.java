@@ -1,146 +1,152 @@
 package com.jiahui.blog.pojo;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.io.Serializable;
-import java.util.Date;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_user")
-public class User implements Serializable,Cloneable {
-    /** ID */
-    @Id
-    @Column(name = "id")
-    private String id ;
-    /** 用户名 */
-    @Column(name = "user_name")
-    private String userName ;
+public class User {
 
-    @Column(name = "password")
-    private String password ;
+  	@Id
+	private String id;
 
-    @Column(name = "roles")
-    private String roles ;
+  	@Column(name = "user_name" )
+	private String userName;
 
-    @Column(name = "avatar")
-    private String avatar ;
+  	@Column(name = "password" )
+	private String password;
 
-    @Column(name = "email")
-    private String email ;
+  	@Column(name = "roles" )
+	private String roles;
 
-    @Column(name = "sign")
-    private String sign ;
+  	@Column(name = "avatar" )
+	private String avatar;
 
-    @Column(name = "state")
-    private String state ;
+  	@Column(name = "email" )
+	private String email;
 
-    @Column(name = "reg_ip")
-    private String regIp ;
+  	@Column(name = "sign" )
+	private String sign;
 
-    @Column(name = "login_ip")
-    private String loginIp ;
+  	@Column(name = "state" )
+	private String state;
 
-    @Column(name = "create_time")
-    private Date create_time ;
+  	@Column(name = "reg_ip" )
+	private String regIp;
 
-    @Column(name = "update_time")
-    private Date update_time ;
+  	@Column(name = "login_ip" )
+	private String loginIp;
 
-    public String getId() {
-        return id;
-    }
+  	@Column(name = "create_time" )
+	private java.sql.Timestamp createTime;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  	@Column(name = "update_time" )
+	private java.sql.Timestamp updateTime;
 
-    public String getUserName() {
-        return userName;
-    }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getPassword() {
-        return password;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
-    public String getRoles() {
-        return roles;
-    }
+  public String getUserName() {
+    return userName;
+  }
 
-    public void setRoles(String roles) {
-        this.roles = roles;
-    }
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
 
-    public String getAvatar() {
-        return avatar;
-    }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
+  public String getPassword() {
+    return password;
+  }
 
-    public String getEmail() {
-        return email;
-    }
+  public void setPassword(String password) {
+    this.password = password;
+  }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
-    public String getSign() {
-        return sign;
-    }
+  public String getRoles() {
+    return roles;
+  }
 
-    public void setSign(String sign) {
-        this.sign = sign;
-    }
+  public void setRoles(String roles) {
+    this.roles = roles;
+  }
 
-    public String getState() {
-        return state;
-    }
 
-    public void setState(String state) {
-        this.state = state;
-    }
+  public String getAvatar() {
+    return avatar;
+  }
 
-    public String getRegIp() {
-        return regIp;
-    }
+  public void setAvatar(String avatar) {
+    this.avatar = avatar;
+  }
 
-    public void setRegIp(String regIp) {
-        this.regIp = regIp;
-    }
 
-    public String getLoginIp() {
-        return loginIp;
-    }
+  public String getEmail() {
+    return email;
+  }
 
-    public void setLoginIp(String loginIp) {
-        this.loginIp = loginIp;
-    }
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
-    public Date getCreate_time() {
-        return create_time;
-    }
 
-    public void setCreate_time(Date create_time) {
-        this.create_time = create_time;
-    }
+  public String getSign() {
+    return sign;
+  }
 
-    public Date getUpdate_time() {
-        return update_time;
-    }
+  public void setSign(String sign) {
+    this.sign = sign;
+  }
 
-    public void setUpdate_time(Date update_time) {
-        this.update_time = update_time;
-    }
+
+  public String getState() {
+    return state;
+  }
+
+  public void setState(String state) {
+    this.state = state;
+  }
+
+
+  public String getRegIp() {
+    return regIp;
+  }
+
+  public void setRegIp(String regIp) {
+    this.regIp = regIp;
+  }
+
+
+  public String getLoginIp() {
+    return loginIp;
+  }
+
+  public void setLoginIp(String loginIp) {
+    this.loginIp = loginIp;
+  }
+
+
+  public java.sql.Timestamp getCreateTime() {
+    return createTime;
+  }
+
+  public void setCreateTime(java.sql.Timestamp createTime) {
+    this.createTime = createTime;
+  }
+
+
+  public java.sql.Timestamp getUpdateTime() {
+    return updateTime;
+  }
+
+  public void setUpdateTime(java.sql.Timestamp updateTime) {
+    this.updateTime = updateTime;
+  }
+
 }

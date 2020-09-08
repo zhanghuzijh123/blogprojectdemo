@@ -2,17 +2,17 @@ package com.jiahui.blog.pojo;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tb_settings")
-public class Settings {
+@Table(name = "tb_labels")
+public class Labels {
 
   	@Id
 	private String id;
 
-  	@Column(name = "key" )
-	private String key;
+  	@Column(name = "name" )
+	private String name;
 
-  	@Column(name = "value" )
-	private String value;
+  	@Column(name = "count" )
+	private long count;
 
   	@Column(name = "create_time" )
 	private java.sql.Timestamp createTime;
@@ -30,21 +30,21 @@ public class Settings {
   }
 
 
-  public String getKey() {
-    return key;
+  public String getName() {
+    return name;
   }
 
-  public void setKey(String key) {
-    this.key = key;
+  public void setName(String name) {
+    this.name = name;
   }
 
 
-  public String getValue() {
-    return value;
+  public long getCount() {
+    return count;
   }
 
-  public void setValue(String value) {
-    this.value = value;
+  public void setCount(long count) {
+    this.count = count;
   }
 
 

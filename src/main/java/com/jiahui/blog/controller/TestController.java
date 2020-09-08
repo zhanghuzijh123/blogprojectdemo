@@ -1,5 +1,8 @@
 package com.jiahui.blog.controller;
 
+import com.jiahui.blog.pojo.User;
+import com.jiahui.blog.response.ResponseResult;
+import com.jiahui.blog.response.ResponseState;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -43,6 +46,9 @@ public class TestController {
                 System.out.println("Hello B"+"------------------"+j);
             }
         });
+
+        String tstname="nikooJson";
+        System.out.println(tstname.replaceAll("[A-Z]", "_$0").toLowerCase());
         //冒泡排序
         ArrayList<Integer> ary=new ArrayList<>();
         ary.add(0,4);
@@ -91,5 +97,15 @@ public class TestController {
         });
         s3.forEach(System.out::println); // a b c 1 2 3
 
+    }
+
+    @GetMapping(value = "/returnResult")
+    public ResponseResult responseResult(){
+        /*ResponseResult responseResult=new ResponseResult(ResponseState.SUCCESS);
+        return responseResult;*/
+        User user=new User();
+        user.setUserName("nikoo");
+        user.setPassword("111111");
+        return ResponseResult.SUCCESS().setData(user);
     }
 }

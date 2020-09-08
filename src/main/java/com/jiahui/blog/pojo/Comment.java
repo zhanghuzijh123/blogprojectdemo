@@ -2,14 +2,20 @@ package com.jiahui.blog.pojo;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tb_article")
-public class Article {
+@Table(name = "tb_comment")
+public class Comment {
 
   	@Id
 	private String id;
 
-  	@Column(name = "title" )
-	private String title;
+  	@Column(name = "parent_content" )
+	private String parentContent;
+
+  	@Column(name = "article_id" )
+	private String articleId;
+
+  	@Column(name = "content" )
+	private String content;
 
   	@Column(name = "user_id" )
 	private String userId;
@@ -20,26 +26,8 @@ public class Article {
   	@Column(name = "user_name" )
 	private String userName;
 
-  	@Column(name = "category_id" )
-	private String categoryId;
-
-  	@Column(name = "content" )
-	private String content;
-
-  	@Column(name = "type" )
-	private String type;
-
   	@Column(name = "state" )
 	private String state;
-
-  	@Column(name = "summary" )
-	private String summary;
-
-  	@Column(name = "labels" )
-	private String labels;
-
-  	@Column(name = "view_count" )
-	private long viewCount;
 
   	@Column(name = "create_time" )
 	private java.sql.Timestamp createTime;
@@ -57,12 +45,30 @@ public class Article {
   }
 
 
-  public String getTitle() {
-    return title;
+  public String getParentContent() {
+    return parentContent;
   }
 
-  public void setTitle(String title) {
-    this.title = title;
+  public void setParentContent(String parentContent) {
+    this.parentContent = parentContent;
+  }
+
+
+  public String getArticleId() {
+    return articleId;
+  }
+
+  public void setArticleId(String articleId) {
+    this.articleId = articleId;
+  }
+
+
+  public String getContent() {
+    return content;
+  }
+
+  public void setContent(String content) {
+    this.content = content;
   }
 
 
@@ -93,66 +99,12 @@ public class Article {
   }
 
 
-  public String getCategoryId() {
-    return categoryId;
-  }
-
-  public void setCategoryId(String categoryId) {
-    this.categoryId = categoryId;
-  }
-
-
-  public String getContent() {
-    return content;
-  }
-
-  public void setContent(String content) {
-    this.content = content;
-  }
-
-
-  public String getType() {
-    return type;
-  }
-
-  public void setType(String type) {
-    this.type = type;
-  }
-
-
   public String getState() {
     return state;
   }
 
   public void setState(String state) {
     this.state = state;
-  }
-
-
-  public String getSummary() {
-    return summary;
-  }
-
-  public void setSummary(String summary) {
-    this.summary = summary;
-  }
-
-
-  public String getLabels() {
-    return labels;
-  }
-
-  public void setLabels(String labels) {
-    this.labels = labels;
-  }
-
-
-  public long getViewCount() {
-    return viewCount;
-  }
-
-  public void setViewCount(long viewCount) {
-    this.viewCount = viewCount;
   }
 
 
