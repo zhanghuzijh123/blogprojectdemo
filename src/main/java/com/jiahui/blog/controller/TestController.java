@@ -46,9 +46,6 @@ public class TestController {
                 System.out.println("Hello B"+"------------------"+j);
             }
         });
-
-        String tstname="nikooJson";
-        System.out.println(tstname.replaceAll("[A-Z]", "_$0").toLowerCase());
         //冒泡排序
         ArrayList<Integer> ary=new ArrayList<>();
         ary.add(0,4);
