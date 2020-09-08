@@ -46,6 +46,7 @@ public class TestController {
                 System.out.println("Hello B"+"------------------"+j);
             }
         });
+        System.out.println("-------------------------------------");
         //冒泡排序
         ArrayList<Integer> ary=new ArrayList<>();
         ary.add(0,4);
