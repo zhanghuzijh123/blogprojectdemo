@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd752787-5098-4864-94fa-5a929a9891e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/979a0c00-6db6-46ab-8acb-524d2d3edc4e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/BlogApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/controller/TestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Article.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/KpiDaily.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Looper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Settings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/User.class" afterDir="false" />
+    <list default="true" id="cd752787-5098-4864-94fa-5a929a9891e0" name="Default Changelist" comment="2020.9.2 git commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/979a0c00-6db6-46ab-8acb-524d2d3edc4e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/KpiDaily.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Looper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Looper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/User.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +39,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sob_blog" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -51,24 +56,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/BlogApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="800">
+              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -76,10 +67,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="554">
+              <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1477#1478#0" expanded="true" />
+                <element signature="e#1503#1504#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+                <element signature="e#1802#1803#0" expanded="true" />
+                <element signature="e#1949#1950#0" expanded="true" />
+                <element signature="e#1976#1977#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,67 +103,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1220#1221#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1494#1495#0" expanded="true" />
-                <element signature="e#1522#1523#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1598#1599#0" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1660#1661#0" expanded="true" />
-                <element signature="e#1704#1705#0" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
-                <element signature="e#1772#1773#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1907#1908#0" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-                <element signature="e#1974#1975#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-                <element signature="e#2038#2039#0" expanded="true" />
-                <element signature="e#2066#2067#0" expanded="true" />
-                <element signature="e#2108#2109#0" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-                <element signature="e#2174#2175#0" expanded="true" />
-                <element signature="e#2202#2203#0" expanded="true" />
-                <element signature="e#2244#2245#0" expanded="true" />
-                <element signature="e#2278#2279#0" expanded="true" />
-                <element signature="e#2312#2313#0" expanded="true" />
-                <element signature="e#2342#2343#0" expanded="true" />
-                <element signature="e#2388#2389#0" expanded="true" />
-                <element signature="e#2426#2427#0" expanded="true" />
-                <element signature="e#2462#2463#0" expanded="true" />
-                <element signature="e#2496#2497#0" expanded="true" />
-                <element signature="e#2548#2549#0" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
-                <element signature="e#2664#2665#0" expanded="true" />
-                <element signature="e#2716#2717#0" expanded="true" />
-                <element signature="e#2762#2763#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="300">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -164,6 +129,16 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fields.each</find>
+      <find>Column</find>
+      <find>it</find>
+      <find>sob</find>
+      <find>blog</find>
+      <find>Log</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -172,15 +147,22 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/BlogApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml.fxml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Settings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Looper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/KpiDaily.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Article.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/bDailyViewCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseResult.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java" />
       </list>
     </option>
   </component>
@@ -193,16 +175,25 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blogproject-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blogproject-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="89" />
-    <option name="y" value="7" />
+    <option name="x" value="88" />
+    <option name="y" value="2" />
     <option name="width" value="1788" />
     <option name="height" value="1028" />
   </component>
@@ -212,13 +203,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
@@ -285,6 +287,18 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="jiahui" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiahui" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,11 +308,33 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="schema" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,13 +347,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15820312" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -369,7 +406,15 @@
       <workItem from="1598865343915" duration="668000" />
       <workItem from="1598922226277" duration="9265000" />
       <workItem from="1599038497145" duration="542000" />
-      <workItem from="1599093107618" duration="821000" />
+      <workItem from="1599093107618" duration="2266000" />
+      <workItem from="1599180056409" duration="6780000" />
+      <workItem from="1599440052306" duration="5929000" />
+      <workItem from="1599525243976" duration="14991000" />
+      <workItem from="1599611594419" duration="2266000" />
+      <workItem from="1599617972934" duration="891000" />
+      <workItem from="1599618944918" duration="1125000" />
+      <workItem from="1599717340238" duration="4102000" />
+      <workItem from="1599784869907" duration="5568000" />
     </task>
     <task id="LOCAL-00001" summary="2020.9.2 git commit">
       <created>1599038891203</created>
@@ -378,50 +423,100 @@
       <option name="project" value="LOCAL" />
       <updated>1599038891203</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020.9.2 git commit">
+      <created>1599093968234</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599093968235</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2020.9.2 git commit">
+      <created>1599546202363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599546202363</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2020.9.2 git commit">
+      <created>1599553660944</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599553660944</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2020.9.8 git commit">
+      <created>1599553699940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599553699940</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2020.9.8 git commit test">
+      <created>1599554746714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599554746714</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2020.9.2 git commit">
+      <created>1599554810358</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599554810358</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21946000" />
+    <option name="totallyTimeSpent" value="65043000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="89" y="7" width="1788" height="1028" extended-state="0" />
+    <frame x="88" y="2" width="1788" height="1028" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.26954493" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.21878646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.5011574" side_tool="true" weight="0.24970828" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4039352" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32908458" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38470453" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.3298611" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.14935823" />
-      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Database" order="4" weight="0.14935823" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32963827" />
       <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020.9.8 git commit" />
+    <MESSAGE value="2020.9.8 git commit test" />
     <MESSAGE value="2020.9.2 git commit" />
     <option name="LAST_COMMIT_MESSAGE" value="2020.9.2 git commit" />
   </component>
@@ -449,55 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-470">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,98 +555,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1645">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1863#1864#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#1969#1970#0" expanded="true" />
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
-            <element signature="e#2170#2171#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-            <element signature="e#2257#2258#0" expanded="true" />
-            <element signature="e#2321#2322#0" expanded="true" />
-            <element signature="e#2365#2366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/KpiDaily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/979a0c00-6db6-46ab-8acb-524d2d3edc4e/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/BlogApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="200">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -606,77 +573,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7594e5fd-c8e0-40fb-83b8-01d29d23bf0d/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/132068df-1cdd-4f65-a73e-844f6ecfb0b9/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://132068df-1cdd-4f65-a73e-844f6ecfb0b9/schema/sob_blog/table/tb_daily_view_count" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Friends.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="250">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Categories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="73" column="27" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Category.java" />
+    <entry file="das://132068df-1cdd-4f65-a73e-844f6ecfb0b9/schema/sob_blog/table/tb_user" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/KpiDaily.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/bDailyViewCount.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/DailyViewCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-            <element signature="e#2202#2203#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2548#2549#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2716#2717#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/sob_system_blog.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="300">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,7 +2,9 @@ package com.jiahui.blog.controller;
 
 import com.jiahui.blog.pojo.User;
 import com.jiahui.blog.response.ResponseResult;
-import com.jiahui.blog.response.ResponseState;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -14,6 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Stream;
 
+@Slf4j
 @RestController
 @RequestMapping("/test")
 public class TestController {
@@ -25,7 +28,7 @@ public class TestController {
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public ArrayList<Integer> helloHello(){
         //java8新的时间日期API
-        System.out.println("java8新的时间日期API------------------");
+        log.info("java8新的时间日期API------------------");
         LocalDateTime dt=LocalDateTime.now();
         System.out.println(dt);
         LocalDate dt1=dt.toLocalDate();
@@ -35,7 +38,7 @@ public class TestController {
         int second=dt.getSecond();
         System.out.println(month+"月"+day+"日"+second+"秒");
         //java foreach()+lambda表达式
-        System.out.println("java foreach()+lambda表达式------------------");
+        log.info("java foreach()+lambda表达式------------------");
         HashMap<String,Integer> map=new HashMap<>();
         map.put("A",1);
         map.put("B",2);
