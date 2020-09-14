@@ -76,11 +76,11 @@ public class UserApi {
 
     /**
      * 获取用户信息
-     * @param userid
+     * @param userId
      * @return
      */
-    @GetMapping("/{userid}")
-    public ResponseResult getUserInfo(@PathVariable String userid){
+    @GetMapping("/{userId}")
+    public ResponseResult getUserInfo(@PathVariable String userId){
         return null;
     }
 
@@ -91,6 +91,27 @@ public class UserApi {
      */
     @PutMapping
     public ResponseResult updateUserInfo(@RequestBody User user){
+        return null;
+    }
+
+    /**
+     * 获取用户列表
+     * @param page
+     * @param size
+     * @return
+     */
+    @GetMapping("/list")
+    public ResponseResult listUser(@RequestParam("page") int page,@RequestParam("size") int size){
+        return null;
+    }
+
+    /**
+     * 删除用户信息
+     * @param userId
+     * @return
+     */
+    @DeleteMapping("/userId")
+    public ResponseResult deleteUser(@PathVariable("userId") String userId){
         return null;
     }
 }

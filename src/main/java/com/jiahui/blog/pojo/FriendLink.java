@@ -3,7 +3,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_friends")
-public class Friends {
+public class FriendLink {
 
   	@Id
 	private String id;
