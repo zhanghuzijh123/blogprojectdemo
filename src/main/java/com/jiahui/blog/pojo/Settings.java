@@ -1,5 +1,6 @@
 package com.jiahui.blog.pojo;
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "tb_settings")
@@ -8,17 +9,17 @@ public class Settings {
   	@Id
 	private String id;
 
-  	@Column(name = "key" )
+  	@Column(name = "`key`" )
 	private String key;
 
-  	@Column(name = "value" )
+  	@Column(name = "`value`" )
 	private String value;
 
   	@Column(name = "create_time" )
-	private java.sql.Timestamp createTime;
+	private Date createTime;
 
   	@Column(name = "update_time" )
-	private java.sql.Timestamp updateTime;
+	private Date updateTime;
 
 
   public String getId() {
@@ -47,22 +48,19 @@ public class Settings {
     this.value = value;
   }
 
+    public Date getCreateTime() {
+        return createTime;
+    }
 
-  public java.sql.Timestamp getCreateTime() {
-    return createTime;
-  }
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 
-  public void setCreateTime(java.sql.Timestamp createTime) {
-    this.createTime = createTime;
-  }
+    public Date getUpdateTime() {
+        return updateTime;
+    }
 
-
-  public java.sql.Timestamp getUpdateTime() {
-    return updateTime;
-  }
-
-  public void setUpdateTime(java.sql.Timestamp updateTime) {
-    this.updateTime = updateTime;
-  }
-
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 }

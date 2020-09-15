@@ -2,13 +2,20 @@ package com.jiahui.blog.controller.user;
 
 import com.jiahui.blog.pojo.User;
 import com.jiahui.blog.response.ResponseResult;
+import com.jiahui.blog.services.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Slf4j
 @RestController
 @RequestMapping("/user")
 public class UserApi {
+
+    @Autowired
+    private UserService userService;
 
     /**
      * 初始化管理员账号
@@ -16,11 +23,11 @@ public class UserApi {
      * @return
      */
     @PostMapping("/admin_account")
-    public ResponseResult initManagerAccount(@RequestBody User user){
+    public ResponseResult initManagerAccount(@RequestBody User user, HttpServletRequest request){
         log.info("username="+user.getUserName());
         log.info("password="+user.getPassword());
         log.info("email="+user.getEmail());
-        return ResponseResult.SUCCESS();
+        return userService.initManagerAccount(user,request);
     }
 
     /**
