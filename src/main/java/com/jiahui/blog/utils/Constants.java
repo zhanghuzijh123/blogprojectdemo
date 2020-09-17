@@ -1,6 +1,9 @@
 package com.jiahui.blog.utils;
 
 public interface Constants {
+
+    Integer DEFAULT_SIZE=5;
+
     interface User{
         String ROLE_ADMIN="role_admin";
         String DEFAULT_AVATAR="https://cdn.sunofbeaches.com/images/default_avatar.png";

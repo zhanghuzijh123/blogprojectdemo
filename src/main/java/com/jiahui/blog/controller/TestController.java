@@ -1,25 +1,37 @@
 package com.jiahui.blog.controller;
 
+import com.jiahui.blog.dao.LabelsDao;
+import com.jiahui.blog.pojo.Labels;
 import com.jiahui.blog.pojo.User;
 import com.jiahui.blog.response.ResponseResult;
+import com.jiahui.blog.utils.Constants;
+import com.jiahui.blog.utils.SnowflakeIdWorker;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
+import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
+@Transactional
 @Slf4j
 @RestController
 @RequestMapping("/test")
 public class TestController {
+
+    @Autowired
+    private SnowflakeIdWorker snowflakeIdWorker;
+
+    @Autowired
+    private LabelsDao labelsDao;
 
     /**
      * springboot方法测试
@@ -107,5 +119,67 @@ public class TestController {
         user.setUserName("nikoo");
         user.setPassword("111111");
         return ResponseResult.SUCCESS().setData(user);
+    }
+
+    @PostMapping("/label")
+    public ResponseResult addLabels(@RequestBody Labels labels){
+        labels.setId(snowflakeIdWorker.nextId()+"");
+        labels.setCreateTime(new Date());
+        labels.setUpdateTime(new Date());
+        labelsDao.save(labels);
+        return ResponseResult.SUCCESS("测试用例label添加成功");
+    }
+
+    @DeleteMapping("/label/{labelId}")
+    public ResponseResult deleteLabels(@PathVariable("labelId") String labelId){
+        int deleteResult=labelsDao.deleteOneById(labelId);
+        log.info("deleteResult:"+deleteResult);
+        if (deleteResult>0){
+            return ResponseResult.SUCCESS("测试用例label删除成功");
+        }else {
+            return ResponseResult.FAILED("测试用例label删除失败");
+        }
+    }
+
+    @PutMapping("/label/{labelId}")
+    public ResponseResult updateLabels(@PathVariable("labelId") String labelId,@RequestBody Labels labels){
+        Labels newLabel=labelsDao.findOneById(labelId);
+        if (newLabel==null){
+            return ResponseResult.FAILED("测试用例label不存在");
+        }
+        newLabel.setName(labels.getName());
+        newLabel.setCount(labels.getCount());
+        newLabel.setUpdateTime(new Date());
+        labelsDao.save(newLabel);
+        return ResponseResult.SUCCESS("测试用例label更新成功");
+    }
+
+    @GetMapping("/label/{labelId}")
+    public ResponseResult getLabels(@PathVariable("labelId") String labelId){
+        Labels labels=labelsDao.findOneById(labelId);
+        if (labels==null){
+            return ResponseResult.FAILED("测试用例label不存在");
+        }
+        return ResponseResult.SUCCESS("测试用例label以获取").setData(labels);
+    }
+
+    /**
+     * 分页查询
+     * @param page
+     * @param size
+     * @return
+     */
+    @GetMapping("/label/list/{page}/{size}")
+    public ResponseResult listLabels(@PathVariable("page") int page,@PathVariable("size") int size){
+        if (page<1){
+            page=1;
+        }
+        if (size<=0){
+            size= Constants.DEFAULT_SIZE;
+        }
+        Sort sort=new Sort(Sort.Direction.DESC,"createTime");
+        Pageable pageable= PageRequest.of(page-1,size,sort);
+        Page<Labels> pageLabel=labelsDao.findAll(pageable);
+        return ResponseResult.SUCCESS("测试用例label分页获取成功").setData(pageLabel);
     }
 }

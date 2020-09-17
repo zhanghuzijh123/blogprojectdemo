@@ -1,5 +1,6 @@
 package com.jiahui.blog.pojo;
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "tb_labels")
@@ -15,10 +16,10 @@ public class Labels {
 	private long count;
 
   	@Column(name = "create_time" )
-	private java.sql.Timestamp createTime;
+	private Date createTime;
 
   	@Column(name = "update_time" )
-	private java.sql.Timestamp updateTime;
+	private Date updateTime;
 
 
   public String getId() {
@@ -48,20 +49,20 @@ public class Labels {
   }
 
 
-  public java.sql.Timestamp getCreateTime() {
+  public Date getCreateTime() {
     return createTime;
   }
 
-  public void setCreateTime(java.sql.Timestamp createTime) {
+  public void setCreateTime(Date createTime) {
     this.createTime = createTime;
   }
 
 
-  public java.sql.Timestamp getUpdateTime() {
+  public Date getUpdateTime() {
     return updateTime;
   }
 
-  public void setUpdateTime(java.sql.Timestamp updateTime) {
+  public void setUpdateTime(Date updateTime) {
     this.updateTime = updateTime;
   }
 

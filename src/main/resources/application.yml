@@ -12,3 +12,6 @@ spring:
       filter:
         enabled: true
 
+  jpa:
+    show-sql: true
+
