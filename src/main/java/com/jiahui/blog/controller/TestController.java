@@ -6,19 +6,30 @@ import com.jiahui.blog.pojo.User;
 import com.jiahui.blog.response.ResponseResult;
 import com.jiahui.blog.utils.Constants;
 import com.jiahui.blog.utils.SnowflakeIdWorker;
+import com.wf.captcha.SpecCaptcha;
+import com.wf.captcha.base.Captcha;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
+import java.awt.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.*;
+import java.util.List;
 import java.util.stream.Stream;
 
 @Transactional
@@ -181,5 +192,55 @@ public class TestController {
         Pageable pageable= PageRequest.of(page-1,size,sort);
         Page<Labels> pageLabel=labelsDao.findAll(pageable);
         return ResponseResult.SUCCESS("测试用例label分页获取成功").setData(pageLabel);
+    }
+
+    @GetMapping("/label/search")
+    public ResponseResult labelDoSearch(@RequestParam("name") String name,@RequestParam("count") Long count){
+        List<Labels> all=labelsDao.findAll(new Specification<Labels>() {
+            @Override
+            public Predicate toPredicate(Root<Labels> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                //Predicate predicate=criteriaBuilder.equal(root.get("name").as(String.class),name);
+                //模糊查询
+                Predicate predicate1 = criteriaBuilder.like(root.get("name").as(String.class), "%"+name+"%");
+                //并行查询
+                Predicate predicate2 = criteriaBuilder.equal(root.get("count").as(Long.class),count);
+                Predicate predicate =criteriaBuilder.and(predicate1,predicate2);
+                return predicate;
+            }
+        });
+        if (all.size()==0){
+            return ResponseResult.FAILED("测试用例label按关键词查找失败");
+        }
+        return ResponseResult.SUCCESS("测试用例label按关键词查找成功").setData(all);
+    }
+
+    /**
+     * 图形验证码
+     * @param request
+     * @param response
+     * @throws Exception
+     */
+    @RequestMapping("/captcha")
+    public void captcha(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        // 设置请求头为输出图片类型
+        response.setContentType("image/gif");
+        response.setHeader("Pragma", "No-cache");
+        response.setHeader("Cache-Control", "no-cache");
+        response.setDateHeader("Expires", 0);
+
+        // 三个参数分别为宽、高、位数
+        SpecCaptcha specCaptcha = new SpecCaptcha(130, 48, 5);
+        // 设置内置字体
+        specCaptcha.setFont(Captcha.FONT_1);
+        // 设置系统字体
+        specCaptcha.setFont(new Font("Verdana", Font.PLAIN, 32));  // 有默认字体，可以不用设置
+        // 设置类型，纯数字、纯字母、字母数字混合
+        specCaptcha.setCharType(Captcha.TYPE_NUM_AND_UPPER);
+
+        // 验证码存入session(如果前后端分离建议存入redis)
+        request.getSession().setAttribute("captcha", specCaptcha.text().toLowerCase());
+
+        // 输出图片流
+        specCaptcha.out(response.getOutputStream());
     }
 }
