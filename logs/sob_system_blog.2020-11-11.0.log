@@ -1,0 +1,5 @@
+[2020/11/11-15:35:09] [main] [INFO ] [com.jiahui.blog.BlogApplication] : Starting BlogApplication on USER-20201030KH with PID 9192 (D:\ideaWork\blogprojectdemo\target\classes started by Administrator in D:\ideaWork\blogprojectdemo)
+[2020/11/11-15:35:09] [main] [INFO ] [com.jiahui.blog.BlogApplication] : No active profile set, falling back to default profiles: default
+[2020/11/11-15:35:47] [main] [INFO ] [com.jiahui.blog.BlogApplication] : Starting BlogApplication on USER-20201030KH with PID 11512 (D:\ideaWork\blogprojectdemo\target\classes started by Administrator in D:\ideaWork\blogprojectdemo)
+[2020/11/11-15:35:47] [main] [INFO ] [com.jiahui.blog.BlogApplication] : No active profile set, falling back to default profiles: default
+[2020/11/11-15:35:53] [main] [INFO ] [com.jiahui.blog.BlogApplication] : Started BlogApplication in 6.592 seconds (JVM running for 8.019)

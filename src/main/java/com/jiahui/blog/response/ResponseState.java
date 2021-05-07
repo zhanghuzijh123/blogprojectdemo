@@ -1,8 +1,8 @@
 package com.jiahui.blog.response;
 
-public enum  ResponseState {
-    SUCCESS(true,10000,"操作成功"),
-    FAILED(false,10001,"操作失败");
+public enum ResponseState {
+    SUCCESS(true, 10000, "操作成功"),
+    FAILED(false, 10001, "操作失败");
 
     private boolean state;
     private int code;

@@ -28,8 +28,8 @@ import java.awt.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 @Transactional
@@ -46,46 +46,47 @@ public class TestController {
 
     /**
      * springboot方法测试
+     *
      * @return
      */
-    @RequestMapping(value = "/hello",method = RequestMethod.GET)
-    public ArrayList<Integer> helloHello(){
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public ArrayList<Integer> helloHello() {
         //java8新的时间日期API
         log.info("java8新的时间日期API------------------");
-        LocalDateTime dt=LocalDateTime.now();
+        LocalDateTime dt = LocalDateTime.now();
         System.out.println(dt);
-        LocalDate dt1=dt.toLocalDate();
+        LocalDate dt1 = dt.toLocalDate();
         System.out.println(dt1);
-        Month month=dt.getMonth();
-        int day=dt.getDayOfMonth();
-        int second=dt.getSecond();
-        System.out.println(month+"月"+day+"日"+second+"秒");
+        Month month = dt.getMonth();
+        int day = dt.getDayOfMonth();
+        int second = dt.getSecond();
+        System.out.println(month + "月" + day + "日" + second + "秒");
         //java foreach()+lambda表达式
         log.info("java foreach()+lambda表达式------------------");
-        HashMap<String,Integer> map=new HashMap<>();
-        map.put("A",1);
-        map.put("B",2);
-        map.put("C",3);
-        map.put("D",4);
-        map.forEach((i,j)->{
-            if (i.equals("B")){
-                System.out.println("Hello B"+"------------------"+j);
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("A", 1);
+        map.put("B", 2);
+        map.put("C", 3);
+        map.put("D", 4);
+        map.forEach((i, j) -> {
+            if (i.equals("B")) {
+                System.out.println("Hello B" + "------------------" + j);
             }
         });
         //冒泡排序
-        ArrayList<Integer> ary=new ArrayList<>();
-        ary.add(0,4);
-        ary.add(1,2);
-        ary.add(2,5);
-        ary.add(3,1);
-        ary.add(4,9);
-        int a=0;
-        for (int i=0;i<ary.size();i++){
-            for (int j=i;j<ary.size();j++){
-                if (ary.get(i)<ary.get(j)){
-                    a=ary.get(i);
-                    ary.set(i,ary.get(j));
-                    ary.set(j,a);
+        ArrayList<Integer> ary = new ArrayList<>();
+        ary.add(0, 4);
+        ary.add(1, 2);
+        ary.add(2, 5);
+        ary.add(3, 1);
+        ary.add(4, 9);
+        int a = 0;
+        for (int i = 0; i < ary.size(); i++) {
+            for (int j = i; j < ary.size(); j++) {
+                if (ary.get(i) < ary.get(j)) {
+                    a = ary.get(i);
+                    ary.set(i, ary.get(j));
+                    ary.set(j, a);
                 }
             }
         }
@@ -95,8 +96,8 @@ public class TestController {
     /**
      * java8新特性Stream csdn链接:https://blog.csdn.net/y_k_y/article/details/84633001
      */
-    @RequestMapping(value = "/stream",method = RequestMethod.GET)
-    public void streamTest(){
+    @RequestMapping(value = "/stream", method = RequestMethod.GET)
+    public void streamTest() {
         /* filter：过滤流中的某些元素
         limit(n)：获取n个元素
         skip(n)：跳过n元素，配合limit(n)可实现分页
@@ -123,18 +124,18 @@ public class TestController {
     }
 
     @GetMapping(value = "/returnResult")
-    public ResponseResult responseResult(){
+    public ResponseResult responseResult() {
         /*ResponseResult responseResult=new ResponseResult(ResponseState.SUCCESS);
         return responseResult;*/
-        User user=new User();
+        User user = new User();
         user.setUserName("nikoo");
         user.setPassword("111111");
         return ResponseResult.SUCCESS().setData(user);
     }
 
     @PostMapping("/label")
-    public ResponseResult addLabels(@RequestBody Labels labels){
-        labels.setId(snowflakeIdWorker.nextId()+"");
+    public ResponseResult addLabels(@RequestBody Labels labels) {
+        labels.setId(snowflakeIdWorker.nextId() + "");
         labels.setCreateTime(new Date());
         labels.setUpdateTime(new Date());
         labelsDao.save(labels);
@@ -142,20 +143,20 @@ public class TestController {
     }
 
     @DeleteMapping("/label/{labelId}")
-    public ResponseResult deleteLabels(@PathVariable("labelId") String labelId){
-        int deleteResult=labelsDao.deleteOneById(labelId);
-        log.info("deleteResult:"+deleteResult);
-        if (deleteResult>0){
+    public ResponseResult deleteLabels(@PathVariable("labelId") String labelId) {
+        int deleteResult = labelsDao.deleteOneById(labelId);
+        log.info("deleteResult:" + deleteResult);
+        if (deleteResult > 0) {
             return ResponseResult.SUCCESS("测试用例label删除成功");
-        }else {
+        } else {
             return ResponseResult.FAILED("测试用例label删除失败");
         }
     }
 
     @PutMapping("/label/{labelId}")
-    public ResponseResult updateLabels(@PathVariable("labelId") String labelId,@RequestBody Labels labels){
-        Labels newLabel=labelsDao.findOneById(labelId);
-        if (newLabel==null){
+    public ResponseResult updateLabels(@PathVariable("labelId") String labelId, @RequestBody Labels labels) {
+        Labels newLabel = labelsDao.findOneById(labelId);
+        if (newLabel == null) {
             return ResponseResult.FAILED("测试用例label不存在");
         }
         newLabel.setName(labels.getName());
@@ -166,9 +167,9 @@ public class TestController {
     }
 
     @GetMapping("/label/{labelId}")
-    public ResponseResult getLabels(@PathVariable("labelId") String labelId){
-        Labels labels=labelsDao.findOneById(labelId);
-        if (labels==null){
+    public ResponseResult getLabels(@PathVariable("labelId") String labelId) {
+        Labels labels = labelsDao.findOneById(labelId);
+        if (labels == null) {
             return ResponseResult.FAILED("测试用例label不存在");
         }
         return ResponseResult.SUCCESS("测试用例label以获取").setData(labels);
@@ -176,39 +177,40 @@ public class TestController {
 
     /**
      * 分页查询
+     *
      * @param page
      * @param size
      * @return
      */
     @GetMapping("/label/list/{page}/{size}")
-    public ResponseResult listLabels(@PathVariable("page") int page,@PathVariable("size") int size){
-        if (page<1){
-            page=1;
+    public ResponseResult listLabels(@PathVariable("page") int page, @PathVariable("size") int size) {
+        if (page < 1) {
+            page = 1;
         }
-        if (size<=0){
-            size= Constants.DEFAULT_SIZE;
+        if (size <= 0) {
+            size = Constants.DEFAULT_SIZE;
         }
-        Sort sort=new Sort(Sort.Direction.DESC,"createTime");
-        Pageable pageable= PageRequest.of(page-1,size,sort);
-        Page<Labels> pageLabel=labelsDao.findAll(pageable);
+        Sort sort = new Sort(Sort.Direction.DESC, "createTime");
+        Pageable pageable = PageRequest.of(page - 1, size, sort);
+        Page<Labels> pageLabel = labelsDao.findAll(pageable);
         return ResponseResult.SUCCESS("测试用例label分页获取成功").setData(pageLabel);
     }
 
     @GetMapping("/label/search")
-    public ResponseResult labelDoSearch(@RequestParam("name") String name,@RequestParam("count") Long count){
-        List<Labels> all=labelsDao.findAll(new Specification<Labels>() {
+    public ResponseResult labelDoSearch(@RequestParam("name") String name, @RequestParam("count") Long count) {
+        List<Labels> all = labelsDao.findAll(new Specification<Labels>() {
             @Override
             public Predicate toPredicate(Root<Labels> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 //Predicate predicate=criteriaBuilder.equal(root.get("name").as(String.class),name);
                 //模糊查询
-                Predicate predicate1 = criteriaBuilder.like(root.get("name").as(String.class), "%"+name+"%");
+                Predicate predicate1 = criteriaBuilder.like(root.get("name").as(String.class), "%" + name + "%");
                 //并行查询
-                Predicate predicate2 = criteriaBuilder.equal(root.get("count").as(Long.class),count);
-                Predicate predicate =criteriaBuilder.and(predicate1,predicate2);
+                Predicate predicate2 = criteriaBuilder.equal(root.get("count").as(Long.class), count);
+                Predicate predicate = criteriaBuilder.and(predicate1, predicate2);
                 return predicate;
             }
         });
-        if (all.size()==0){
+        if (all.size() == 0) {
             return ResponseResult.FAILED("测试用例label按关键词查找失败");
         }
         return ResponseResult.SUCCESS("测试用例label按关键词查找成功").setData(all);
@@ -216,6 +218,7 @@ public class TestController {
 
     /**
      * 图形验证码
+     *
      * @param request
      * @param response
      * @throws Exception
@@ -242,5 +245,163 @@ public class TestController {
 
         // 输出图片流
         specCaptcha.out(response.getOutputStream());
+    }
+
+    @GetMapping("/testGetInforMation/{name}")
+    public ResponseResult testGetInformation(@PathVariable("name") String name) throws Exception {
+        try {
+            Labels labels = labelsDao.findOneByName(name);
+            if (labels != null) {
+                return ResponseResult.SUCCESS().setData(labels);
+            } else {
+                return ResponseResult.FAILED("查询失败,无此数据");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseResult.FAILED("未知错误");
+        }
+    }
+
+    @PostMapping("/sfMethod")
+    public ResponseResult sfMethod(@RequestParam("sfNum") Integer sfNum) {
+        try {
+            ArrayList<Integer> list = new ArrayList<>();
+            double total = 1;
+            for (int i = 1; i <= sfNum; i++) {
+                if (sfNum % i == 0) {
+                    list.add(i);
+                }
+            }
+            for (Integer nums : list) {
+                total = total * nums;
+            }
+            return ResponseResult.SUCCESS().setData(total);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseResult.FAILED();
+        }
+    }
+
+    @RequestMapping("/mrfz")
+    public ResponseResult getMrfzInformations(@RequestParam("gy") Integer gy) {
+        try {
+            ArrayList<Integer> lists = new ArrayList<>();
+            int a = 0;
+            for (int i = 0; i < gy; i++) {
+                lists.add((int) (Math.random() * 100));
+            }
+            for (int j = 0; j < gy; j++) {
+                for (int k = j + 1; k < gy; k++) {
+                    if (lists.get(j) < lists.get(k)) {
+                        a = lists.get(j);
+                        lists.set(j, lists.get(k));
+                        lists.set(k, a);
+                    }
+                }
+            }
+            System.out.println(lists);
+            lists.set(0, (int) (lists.get(0) * 0.8));
+            for (int z = 1; z < gy; z++) {
+                if (lists.get(0) < lists.get(z)) {
+                    a = lists.get(z);
+                    lists.set(z, lists.get(0));
+                    lists.set(0, a);
+                }
+            }
+            return ResponseResult.SUCCESS().setData(lists);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseResult.FAILED("未知错误");
+        }
+    }
+
+    /**
+     * if-else不加花括号测试
+     *
+     * @param param
+     * @return
+     */
+    @PostMapping("/testIfElse")
+    public ResponseResult testIfElse(@RequestParam("param") Integer param) {
+        try {
+            int a = 0, b = 0, c = 0;
+            ArrayList<Integer> list = new ArrayList<>();
+            if (param == 1) {
+                if (true) a = 1;
+                b = 2;
+                c = 3;
+            } else {
+                if (false) a = 1;
+                b = 2;
+                c = 3;
+            }
+            list.add(a);
+            list.add(b);
+            list.add(c);
+            return ResponseResult.SUCCESS().setData(list);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseResult.FAILED("未知错误");
+        }
+    }
+
+    @PostMapping("/gameInProject")
+    public ResponseResult gameInProject(@RequestParam("goAhead") Boolean goAhead) {
+        try {
+            int health = 100;
+            int defense = 5;
+            int floor = 0;
+            int dmg = (int) (Math.random() * (floor + 1) * 15);
+            System.out.println(dmg);
+            int limitDefense = 0;
+            int limitDmg = 0;
+            if (goAhead) {
+                do {
+                    if (limitDefense == 1 && limitDmg == 1) {
+                        limitDefense = 0;
+                        limitDmg = 0;
+                    }
+                    if (defense >= dmg) {
+                        defense += Math.random() * 10;
+                        dmg += Math.random() * 10;
+                        limitDefense++;
+                        if (limitDefense > 2) {
+                            limitDefense = 0;
+                            if (defense - dmg > 10) {
+                                defense -= Math.random() * 10;
+                            } else {
+                                defense -= Math.random() * 5;
+                            }
+                        }
+                        System.out.println("health:" + health + "," + "defense:" + defense + "," + "floor:" + floor + "," + "dmg:" + dmg + "," + "limitDefense:" + limitDefense + "," + "limitDmg:" + limitDmg);
+                    } else {
+                        health = health - (dmg - defense);
+                        defense += Math.random() * 10;
+                        dmg += Math.random() * 10;
+                        limitDmg++;
+                        if (limitDmg > 2) {
+                            limitDmg = 0;
+                            if (dmg - defense > 10) {
+                                dmg -= Math.random() * 10;
+                            } else {
+                                dmg -= Math.random() * 5;
+                            }
+                        }
+                        System.out.println("health:" + health + "," + "defense:" + defense + "," + "floor:" + floor + "," + "dmg:" + dmg + "," + "limitDefense:" + limitDefense + "," + "limitDmg:" + limitDmg);
+                    }
+                    floor++;
+                } while (floor <= 20);
+                if (health > 0) {
+                    return ResponseResult.SUCCESS("complete");
+                } else {
+                    return ResponseResult.FAILED("end");
+                }
+            } else {
+                return ResponseResult.FAILED("end");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseResult.FAILED("未知错误");
+        }
     }
 }

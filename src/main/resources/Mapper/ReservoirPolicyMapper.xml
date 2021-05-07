@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiahui.blog.Mapper.ReservoirPolicyMapper">
+  <resultMap id="BaseResultMap" type="com.jiahui.blog.pojo.ReservoirPolicy">
+    <!--@mbg.generated-->
+    <!--@Table reservoir_policy-->
+    <id column="policy_id" jdbcType="BIGINT" property="policyId" />
+    <result column="reservoir_id" jdbcType="BIGINT" property="reservoirId" />
+    <result column="policy_type" jdbcType="TINYINT" property="policyType" />
+    <result column="policy_time" jdbcType="TIMESTAMP" property="policyTime" />
+    <result column="policy_title" jdbcType="VARCHAR" property="policyTitle" />
+    <result column="policy_dept" jdbcType="VARCHAR" property="policyDept" />
+    <result column="policy_content" jdbcType="LONGVARCHAR" property="policyContent" />
+    <result column="file_id" jdbcType="BIGINT" property="fileId" />
+    <result column="file_size" jdbcType="BIGINT" property="fileSize" />
+    <result column="policy_files" jdbcType="VARCHAR" property="policyFiles" />
+    <result column="file_name" jdbcType="VARCHAR" property="fileName" />
+    <result column="reservoir_type" jdbcType="TINYINT" property="reservoirType" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="create_uid" jdbcType="BIGINT" property="createUid" />
+    <result column="update_uid" jdbcType="BIGINT" property="updateUid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    policy_id, reservoir_id, policy_type, policy_time, policy_title, policy_dept, policy_content, 
+    file_id, file_size, policy_files, file_name, reservoir_type, version, create_uid, 
+    update_uid, create_time, update_time, is_delete
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from reservoir_policy
+    where policy_id = #{policyId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from reservoir_policy
+    where policy_id = #{policyId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="policy_id" keyProperty="policyId" parameterType="com.jiahui.blog.pojo.ReservoirPolicy" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into reservoir_policy (reservoir_id, policy_type, policy_time, 
+      policy_title, policy_dept, policy_content, 
+      file_id, file_size, policy_files, 
+      file_name, reservoir_type, version, 
+      create_uid, update_uid, create_time, 
+      update_time, is_delete)
+    values (#{reservoirId,jdbcType=BIGINT}, #{policyType,jdbcType=TINYINT}, #{policyTime,jdbcType=TIMESTAMP}, 
+      #{policyTitle,jdbcType=VARCHAR}, #{policyDept,jdbcType=VARCHAR}, #{policyContent,jdbcType=LONGVARCHAR}, 
+      #{fileId,jdbcType=BIGINT}, #{fileSize,jdbcType=BIGINT}, #{policyFiles,jdbcType=VARCHAR}, 
+      #{fileName,jdbcType=VARCHAR}, #{reservoirType,jdbcType=TINYINT}, #{version,jdbcType=INTEGER}, 
+      #{createUid,jdbcType=BIGINT}, #{updateUid,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{isDelete,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" keyColumn="policy_id" keyProperty="policyId" parameterType="com.jiahui.blog.pojo.ReservoirPolicy" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into reservoir_policy
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="reservoirId != null">
+        reservoir_id,
+      </if>
+      <if test="policyType != null">
+        policy_type,
+      </if>
+      <if test="policyTime != null">
+        policy_time,
+      </if>
+      <if test="policyTitle != null">
+        policy_title,
+      </if>
+      <if test="policyDept != null">
+        policy_dept,
+      </if>
+      <if test="policyContent != null">
+        policy_content,
+      </if>
+      <if test="fileId != null">
+        file_id,
+      </if>
+      <if test="fileSize != null">
+        file_size,
+      </if>
+      <if test="policyFiles != null">
+        policy_files,
+      </if>
+      <if test="fileName != null">
+        file_name,
+      </if>
+      <if test="reservoirType != null">
+        reservoir_type,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="createUid != null">
+        create_uid,
+      </if>
+      <if test="updateUid != null">
+        update_uid,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="reservoirId != null">
+        #{reservoirId,jdbcType=BIGINT},
+      </if>
+      <if test="policyType != null">
+        #{policyType,jdbcType=TINYINT},
+      </if>
+      <if test="policyTime != null">
+        #{policyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="policyTitle != null">
+        #{policyTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="policyDept != null">
+        #{policyDept,jdbcType=VARCHAR},
+      </if>
+      <if test="policyContent != null">
+        #{policyContent,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fileId != null">
+        #{fileId,jdbcType=BIGINT},
+      </if>
+      <if test="fileSize != null">
+        #{fileSize,jdbcType=BIGINT},
+      </if>
+      <if test="policyFiles != null">
+        #{policyFiles,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null">
+        #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="reservoirType != null">
+        #{reservoirType,jdbcType=TINYINT},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createUid != null">
+        #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateUid != null">
+        #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jiahui.blog.pojo.ReservoirPolicy">
+    <!--@mbg.generated-->
+    update reservoir_policy
+    <set>
+      <if test="reservoirId != null">
+        reservoir_id = #{reservoirId,jdbcType=BIGINT},
+      </if>
+      <if test="policyType != null">
+        policy_type = #{policyType,jdbcType=TINYINT},
+      </if>
+      <if test="policyTime != null">
+        policy_time = #{policyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="policyTitle != null">
+        policy_title = #{policyTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="policyDept != null">
+        policy_dept = #{policyDept,jdbcType=VARCHAR},
+      </if>
+      <if test="policyContent != null">
+        policy_content = #{policyContent,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fileId != null">
+        file_id = #{fileId,jdbcType=BIGINT},
+      </if>
+      <if test="fileSize != null">
+        file_size = #{fileSize,jdbcType=BIGINT},
+      </if>
+      <if test="policyFiles != null">
+        policy_files = #{policyFiles,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null">
+        file_name = #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="reservoirType != null">
+        reservoir_type = #{reservoirType,jdbcType=TINYINT},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createUid != null">
+        create_uid = #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateUid != null">
+        update_uid = #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=TINYINT},
+      </if>
+    </set>
+    where policy_id = #{policyId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jiahui.blog.pojo.ReservoirPolicy">
+    <!--@mbg.generated-->
+    update reservoir_policy
+    set reservoir_id = #{reservoirId,jdbcType=BIGINT},
+      policy_type = #{policyType,jdbcType=TINYINT},
+      policy_time = #{policyTime,jdbcType=TIMESTAMP},
+      policy_title = #{policyTitle,jdbcType=VARCHAR},
+      policy_dept = #{policyDept,jdbcType=VARCHAR},
+      policy_content = #{policyContent,jdbcType=LONGVARCHAR},
+      file_id = #{fileId,jdbcType=BIGINT},
+      file_size = #{fileSize,jdbcType=BIGINT},
+      policy_files = #{policyFiles,jdbcType=VARCHAR},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      reservoir_type = #{reservoirType,jdbcType=TINYINT},
+      version = #{version,jdbcType=INTEGER},
+      create_uid = #{createUid,jdbcType=BIGINT},
+      update_uid = #{updateUid,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=TINYINT}
+    where policy_id = #{policyId,jdbcType=BIGINT}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update reservoir_policy
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="reservoir_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.reservoirId,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="policy_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyType,jdbcType=TINYINT}
+        </foreach>
+      </trim>
+      <trim prefix="policy_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="policy_title = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyTitle,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="policy_dept = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyDept,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="policy_content = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyContent,jdbcType=LONGVARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="file_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.fileId,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="file_size = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.fileSize,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="policy_files = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyFiles,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="file_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.fileName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="reservoir_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.reservoirType,jdbcType=TINYINT}
+        </foreach>
+      </trim>
+      <trim prefix="version = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.version,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="create_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.createUid,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="update_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.updateUid,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="create_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="update_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="is_delete = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.isDelete,jdbcType=TINYINT}
+        </foreach>
+      </trim>
+    </trim>
+    where policy_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.policyId,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update reservoir_policy
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="reservoir_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.reservoirId != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.reservoirId,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="policy_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.policyType != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyType,jdbcType=TINYINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="policy_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.policyTime != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="policy_title = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.policyTitle != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyTitle,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="policy_dept = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.policyDept != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyDept,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="policy_content = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.policyContent != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyContent,jdbcType=LONGVARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="file_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.fileId != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.fileId,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="file_size = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.fileSize != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.fileSize,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="policy_files = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.policyFiles != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.policyFiles,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="file_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.fileName != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.fileName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="reservoir_type = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.reservoirType != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.reservoirType,jdbcType=TINYINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="version = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.version != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.version,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="create_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.createUid != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.createUid,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="update_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateUid != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.updateUid,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="create_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.createTime != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="update_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateTime != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="is_delete = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.isDelete != null">
+            when policy_id = #{item.policyId,jdbcType=BIGINT} then #{item.isDelete,jdbcType=TINYINT}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where policy_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.policyId,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="policy_id" keyProperty="policyId" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into reservoir_policy
+    (reservoir_id, policy_type, policy_time, policy_title, policy_dept, policy_content, 
+      file_id, file_size, policy_files, file_name, reservoir_type, version, create_uid, 
+      update_uid, create_time, update_time, is_delete)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.reservoirId,jdbcType=BIGINT}, #{item.policyType,jdbcType=TINYINT}, #{item.policyTime,jdbcType=TIMESTAMP}, 
+        #{item.policyTitle,jdbcType=VARCHAR}, #{item.policyDept,jdbcType=VARCHAR}, #{item.policyContent,jdbcType=LONGVARCHAR}, 
+        #{item.fileId,jdbcType=BIGINT}, #{item.fileSize,jdbcType=BIGINT}, #{item.policyFiles,jdbcType=VARCHAR}, 
+        #{item.fileName,jdbcType=VARCHAR}, #{item.reservoirType,jdbcType=TINYINT}, #{item.version,jdbcType=INTEGER}, 
+        #{item.createUid,jdbcType=BIGINT}, #{item.updateUid,jdbcType=BIGINT}, #{item.createTime,jdbcType=TIMESTAMP}, 
+        #{item.updateTime,jdbcType=TIMESTAMP}, #{item.isDelete,jdbcType=TINYINT})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" keyColumn="policy_id" keyProperty="policyId" parameterType="com.jiahui.blog.pojo.ReservoirPolicy" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into reservoir_policy
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="policyId != null">
+        policy_id,
+      </if>
+      reservoir_id,
+      policy_type,
+      policy_time,
+      policy_title,
+      policy_dept,
+      policy_content,
+      file_id,
+      file_size,
+      policy_files,
+      file_name,
+      reservoir_type,
+      version,
+      create_uid,
+      update_uid,
+      create_time,
+      update_time,
+      is_delete,
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="policyId != null">
+        #{policyId,jdbcType=BIGINT},
+      </if>
+      #{reservoirId,jdbcType=BIGINT},
+      #{policyType,jdbcType=TINYINT},
+      #{policyTime,jdbcType=TIMESTAMP},
+      #{policyTitle,jdbcType=VARCHAR},
+      #{policyDept,jdbcType=VARCHAR},
+      #{policyContent,jdbcType=LONGVARCHAR},
+      #{fileId,jdbcType=BIGINT},
+      #{fileSize,jdbcType=BIGINT},
+      #{policyFiles,jdbcType=VARCHAR},
+      #{fileName,jdbcType=VARCHAR},
+      #{reservoirType,jdbcType=TINYINT},
+      #{version,jdbcType=INTEGER},
+      #{createUid,jdbcType=BIGINT},
+      #{updateUid,jdbcType=BIGINT},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{updateTime,jdbcType=TIMESTAMP},
+      #{isDelete,jdbcType=TINYINT},
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="policyId != null">
+        policy_id = #{policyId,jdbcType=BIGINT},
+      </if>
+      reservoir_id = #{reservoirId,jdbcType=BIGINT},
+      policy_type = #{policyType,jdbcType=TINYINT},
+      policy_time = #{policyTime,jdbcType=TIMESTAMP},
+      policy_title = #{policyTitle,jdbcType=VARCHAR},
+      policy_dept = #{policyDept,jdbcType=VARCHAR},
+      policy_content = #{policyContent,jdbcType=LONGVARCHAR},
+      file_id = #{fileId,jdbcType=BIGINT},
+      file_size = #{fileSize,jdbcType=BIGINT},
+      policy_files = #{policyFiles,jdbcType=VARCHAR},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      reservoir_type = #{reservoirType,jdbcType=TINYINT},
+      version = #{version,jdbcType=INTEGER},
+      create_uid = #{createUid,jdbcType=BIGINT},
+      update_uid = #{updateUid,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=TINYINT},
+    </trim>
+  </insert>
+  <insert id="insertOrUpdateSelective" keyColumn="policy_id" keyProperty="policyId" parameterType="com.jiahui.blog.pojo.ReservoirPolicy" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into reservoir_policy
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="policyId != null">
+        policy_id,
+      </if>
+      <if test="reservoirId != null">
+        reservoir_id,
+      </if>
+      <if test="policyType != null">
+        policy_type,
+      </if>
+      <if test="policyTime != null">
+        policy_time,
+      </if>
+      <if test="policyTitle != null">
+        policy_title,
+      </if>
+      <if test="policyDept != null">
+        policy_dept,
+      </if>
+      <if test="policyContent != null">
+        policy_content,
+      </if>
+      <if test="fileId != null">
+        file_id,
+      </if>
+      <if test="fileSize != null">
+        file_size,
+      </if>
+      <if test="policyFiles != null">
+        policy_files,
+      </if>
+      <if test="fileName != null">
+        file_name,
+      </if>
+      <if test="reservoirType != null">
+        reservoir_type,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="createUid != null">
+        create_uid,
+      </if>
+      <if test="updateUid != null">
+        update_uid,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="policyId != null">
+        #{policyId,jdbcType=BIGINT},
+      </if>
+      <if test="reservoirId != null">
+        #{reservoirId,jdbcType=BIGINT},
+      </if>
+      <if test="policyType != null">
+        #{policyType,jdbcType=TINYINT},
+      </if>
+      <if test="policyTime != null">
+        #{policyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="policyTitle != null">
+        #{policyTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="policyDept != null">
+        #{policyDept,jdbcType=VARCHAR},
+      </if>
+      <if test="policyContent != null">
+        #{policyContent,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fileId != null">
+        #{fileId,jdbcType=BIGINT},
+      </if>
+      <if test="fileSize != null">
+        #{fileSize,jdbcType=BIGINT},
+      </if>
+      <if test="policyFiles != null">
+        #{policyFiles,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null">
+        #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="reservoirType != null">
+        #{reservoirType,jdbcType=TINYINT},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createUid != null">
+        #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateUid != null">
+        #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=TINYINT},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="policyId != null">
+        policy_id = #{policyId,jdbcType=BIGINT},
+      </if>
+      <if test="reservoirId != null">
+        reservoir_id = #{reservoirId,jdbcType=BIGINT},
+      </if>
+      <if test="policyType != null">
+        policy_type = #{policyType,jdbcType=TINYINT},
+      </if>
+      <if test="policyTime != null">
+        policy_time = #{policyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="policyTitle != null">
+        policy_title = #{policyTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="policyDept != null">
+        policy_dept = #{policyDept,jdbcType=VARCHAR},
+      </if>
+      <if test="policyContent != null">
+        policy_content = #{policyContent,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fileId != null">
+        file_id = #{fileId,jdbcType=BIGINT},
+      </if>
+      <if test="fileSize != null">
+        file_size = #{fileSize,jdbcType=BIGINT},
+      </if>
+      <if test="policyFiles != null">
+        policy_files = #{policyFiles,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null">
+        file_name = #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="reservoirType != null">
+        reservoir_type = #{reservoirType,jdbcType=TINYINT},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createUid != null">
+        create_uid = #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateUid != null">
+        update_uid = #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+</mapper>

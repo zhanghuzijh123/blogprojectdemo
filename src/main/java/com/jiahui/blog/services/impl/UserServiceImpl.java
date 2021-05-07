@@ -36,43 +36,43 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseResult initManagerAccount(User user, HttpServletRequest request) {
         //检查是否有初始化
-        Settings admin_state=settingsDao.findOneByKey(Constants.Settings.MANAGER_ACCOUNT_INIT_STATE);
-        if (admin_state!=null){
+        Settings admin_state = settingsDao.findOneByKey(Constants.Settings.MANAGER_ACCOUNT_INIT_STATE);
+        if (admin_state != null) {
             return ResponseResult.FAILED("管理员账号已经初始化");
         }
         //TODO:
         //检查数据
-        if (TextUtils.isEmpty(user.getUserName())){
+        if (TextUtils.isEmpty(user.getUserName())) {
             return ResponseResult.FAILED("用户名不能为空");
         }
-        if (TextUtils.isEmpty(user.getPassword())){
+        if (TextUtils.isEmpty(user.getPassword())) {
             return ResponseResult.FAILED("用户密码不能为空");
         }
-        if (TextUtils.isEmpty(user.getEmail())){
+        if (TextUtils.isEmpty(user.getEmail())) {
             return ResponseResult.FAILED("用户邮箱不能为空");
         }
         //补充数据
-        user.setId(snowflakeIdWorker.nextId()+"");
+        user.setId(snowflakeIdWorker.nextId() + "");
         user.setRoles(Constants.User.ROLE_ADMIN);
         user.setAvatar(Constants.User.DEFAULT_AVATAR);
         user.setState(Constants.User.DEFAULT_STATE);
-        String localIp=request.getLocalAddr();
-        log.info("localIp="+localIp);
-        String remoteIp=request.getRemoteAddr();
-        log.info("remoteIp="+remoteIp);
+        String localIp = request.getLocalAddr();
+        log.info("localIp=" + localIp);
+        String remoteIp = request.getRemoteAddr();
+        log.info("remoteIp=" + remoteIp);
         user.setRegIp(request.getLocalAddr());
         user.setLoginIp(request.getRemoteAddr());
         user.setCreateTime(new Date());
         user.setUpdateTime(new Date());
-        String password=user.getPassword();
+        String password = user.getPassword();
         //对原密码进行加密
-        String passwordEncode=bCryptPasswordEncoder.encode(password);
+        String passwordEncode = bCryptPasswordEncoder.encode(password);
         user.setPassword(passwordEncode);
         //保存到数据库中
         userDao.save(user);
         //更新已经添加的标记
-        Settings settings=new Settings();
-        settings.setId(snowflakeIdWorker.nextId()+"");
+        Settings settings = new Settings();
+        settings.setId(snowflakeIdWorker.nextId() + "");
         settings.setKey(Constants.Settings.MANAGER_ACCOUNT_INIT_STATE);
         settings.setValue("1");
         settings.setCreateTime(new Date());

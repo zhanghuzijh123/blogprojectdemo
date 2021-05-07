@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiahui.blog.Mapper.TbTestMapper">
+  <resultMap id="BaseResultMap" type="com.jiahui.blog.pojo.TbTest">
+    <!--@mbg.generated-->
+    <!--@Table tb_test-->
+    <id column="test_id" jdbcType="BIGINT" property="testId" />
+    <result column="test_name" jdbcType="VARCHAR" property="testName" />
+    <result column="test_value" jdbcType="DECIMAL" property="testValue" />
+    <result column="create_uid" jdbcType="BIGINT" property="createUid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_uid" jdbcType="BIGINT" property="updateUid" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    test_id, test_name, test_value, create_uid, create_time, update_uid, update_time, 
+    is_delete
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from tb_test
+    where test_id = #{testId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from tb_test
+    where test_id = #{testId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="test_id" keyProperty="testId" parameterType="com.jiahui.blog.pojo.TbTest" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into tb_test (test_name, test_value, create_uid, 
+      create_time, update_uid, update_time, 
+      is_delete)
+    values (#{testName,jdbcType=VARCHAR}, #{testValue,jdbcType=DECIMAL}, #{createUid,jdbcType=BIGINT}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateUid,jdbcType=BIGINT}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{isDelete,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" keyColumn="test_id" keyProperty="testId" parameterType="com.jiahui.blog.pojo.TbTest" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into tb_test
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="testName != null">
+        test_name,
+      </if>
+      <if test="testValue != null">
+        test_value,
+      </if>
+      <if test="createUid != null">
+        create_uid,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUid != null">
+        update_uid,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="testName != null">
+        #{testName,jdbcType=VARCHAR},
+      </if>
+      <if test="testValue != null">
+        #{testValue,jdbcType=DECIMAL},
+      </if>
+      <if test="createUid != null">
+        #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUid != null">
+        #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jiahui.blog.pojo.TbTest">
+    <!--@mbg.generated-->
+    update tb_test
+    <set>
+      <if test="testName != null">
+        test_name = #{testName,jdbcType=VARCHAR},
+      </if>
+      <if test="testValue != null">
+        test_value = #{testValue,jdbcType=DECIMAL},
+      </if>
+      <if test="createUid != null">
+        create_uid = #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUid != null">
+        update_uid = #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=TINYINT},
+      </if>
+    </set>
+    where test_id = #{testId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jiahui.blog.pojo.TbTest">
+    <!--@mbg.generated-->
+    update tb_test
+    set test_name = #{testName,jdbcType=VARCHAR},
+      test_value = #{testValue,jdbcType=DECIMAL},
+      create_uid = #{createUid,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_uid = #{updateUid,jdbcType=BIGINT},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=TINYINT}
+    where test_id = #{testId,jdbcType=BIGINT}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update tb_test
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="test_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.testName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="test_value = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.testValue,jdbcType=DECIMAL}
+        </foreach>
+      </trim>
+      <trim prefix="create_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.createUid,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="create_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="update_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.updateUid,jdbcType=BIGINT}
+        </foreach>
+      </trim>
+      <trim prefix="update_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="is_delete = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when test_id = #{item.testId,jdbcType=BIGINT} then #{item.isDelete,jdbcType=TINYINT}
+        </foreach>
+      </trim>
+    </trim>
+    where test_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.testId,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update tb_test
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="test_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.testName != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.testName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="test_value = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.testValue != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.testValue,jdbcType=DECIMAL}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="create_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.createUid != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.createUid,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="create_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.createTime != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.createTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="update_uid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateUid != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.updateUid,jdbcType=BIGINT}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="update_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateTime != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.updateTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="is_delete = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.isDelete != null">
+            when test_id = #{item.testId,jdbcType=BIGINT} then #{item.isDelete,jdbcType=TINYINT}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where test_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.testId,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="test_id" keyProperty="testId" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into tb_test
+    (test_name, test_value, create_uid, create_time, update_uid, update_time, is_delete
+      )
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.testName,jdbcType=VARCHAR}, #{item.testValue,jdbcType=DECIMAL}, #{item.createUid,jdbcType=BIGINT}, 
+        #{item.createTime,jdbcType=TIMESTAMP}, #{item.updateUid,jdbcType=BIGINT}, #{item.updateTime,jdbcType=TIMESTAMP}, 
+        #{item.isDelete,jdbcType=TINYINT})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" keyColumn="test_id" keyProperty="testId" parameterType="com.jiahui.blog.pojo.TbTest" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into tb_test
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="testId != null">
+        test_id,
+      </if>
+      test_name,
+      test_value,
+      create_uid,
+      create_time,
+      update_uid,
+      update_time,
+      is_delete,
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="testId != null">
+        #{testId,jdbcType=BIGINT},
+      </if>
+      #{testName,jdbcType=VARCHAR},
+      #{testValue,jdbcType=DECIMAL},
+      #{createUid,jdbcType=BIGINT},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{updateUid,jdbcType=BIGINT},
+      #{updateTime,jdbcType=TIMESTAMP},
+      #{isDelete,jdbcType=TINYINT},
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="testId != null">
+        test_id = #{testId,jdbcType=BIGINT},
+      </if>
+      test_name = #{testName,jdbcType=VARCHAR},
+      test_value = #{testValue,jdbcType=DECIMAL},
+      create_uid = #{createUid,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_uid = #{updateUid,jdbcType=BIGINT},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=TINYINT},
+    </trim>
+  </insert>
+  <insert id="insertOrUpdateSelective" keyColumn="test_id" keyProperty="testId" parameterType="com.jiahui.blog.pojo.TbTest" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into tb_test
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="testId != null">
+        test_id,
+      </if>
+      <if test="testName != null">
+        test_name,
+      </if>
+      <if test="testValue != null">
+        test_value,
+      </if>
+      <if test="createUid != null">
+        create_uid,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUid != null">
+        update_uid,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="testId != null">
+        #{testId,jdbcType=BIGINT},
+      </if>
+      <if test="testName != null">
+        #{testName,jdbcType=VARCHAR},
+      </if>
+      <if test="testValue != null">
+        #{testValue,jdbcType=DECIMAL},
+      </if>
+      <if test="createUid != null">
+        #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUid != null">
+        #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=TINYINT},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="testId != null">
+        test_id = #{testId,jdbcType=BIGINT},
+      </if>
+      <if test="testName != null">
+        test_name = #{testName,jdbcType=VARCHAR},
+      </if>
+      <if test="testValue != null">
+        test_value = #{testValue,jdbcType=DECIMAL},
+      </if>
+      <if test="createUid != null">
+        create_uid = #{createUid,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUid != null">
+        update_uid = #{updateUid,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+</mapper>
