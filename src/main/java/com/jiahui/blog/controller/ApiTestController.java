@@ -46,4 +46,34 @@ public class ApiTestController {
             return ResponseResult.FAILED(e.getMessage());
         }
     }
+
+    @GetMapping("/redisTemplate/test")
+    public ResponseResult testRedisTemplate(){
+        try {
+            return ResponseResult.SUCCESS().setData(tbTestService.testRedisTemplateSaveString());
+        }catch (Exception e){
+            log.error("error");
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/redisTemplate/getString")
+    public ResponseResult getRedisTemplateStringValue(){
+        try {
+            return ResponseResult.SUCCESS().setData(tbTestService.getRedisTemplateStringValue());
+        }catch (Exception e){
+            log.error("error");
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/test")
+    public ResponseResult test(){
+        try {
+            return ResponseResult.SUCCESS().setData(tbTestService.isEmptyTest());
+        }catch (Exception e){
+            log.error("error");
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
 }

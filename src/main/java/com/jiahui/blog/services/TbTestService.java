@@ -33,6 +33,16 @@ public interface TbTestService {
     Integer testInputStreamToJsonObject();
 
     int testRedis();
+
+    int testRedisTemplateSaveString();
+
+    String getRedisTemplateStringValue();
+
+    int test();
+
+    int testDate() throws Exception;
+
+    int isEmptyTest();
 }
 
 
