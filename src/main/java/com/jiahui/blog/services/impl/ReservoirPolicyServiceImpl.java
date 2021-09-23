@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 import com.jiahui.blog.pojo.ReservoirPolicy;
-import com.jiahui.blog.Mapper.ReservoirPolicyMapper;
+import com.jiahui.blog.mapper.ReservoirPolicyMapper;
 import com.jiahui.blog.services.ReservoirPolicyService;
 @Service
 public class ReservoirPolicyServiceImpl implements ReservoirPolicyService{

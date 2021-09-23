@@ -2,23 +2,23 @@ package com.jiahui.blog.services.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.jiahui.blog.Mapper.TbTestMapper;
-import com.jiahui.blog.bo.WaterLevelBO;
+import com.jiahui.blog.bo.*;
+import com.jiahui.blog.config.RedisTemplateConfig;
+import com.jiahui.blog.mapper.TbTestMapper;
+import com.jiahui.blog.config.BlogConfig;
 import com.jiahui.blog.pojo.ObjectText;
+import com.jiahui.blog.pojo.ResponseObject;
 import com.jiahui.blog.pojo.TbTest;
 import com.jiahui.blog.services.TbTestService;
 import com.jiahui.blog.utils.DateTimeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.BoundValueOperations;
-import org.springframework.data.redis.core.HashOperations;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.data.redis.core.*;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
@@ -37,6 +37,12 @@ public class TbTestServiceImpl implements TbTestService {
 
     @Resource
     private TbTestMapper tbTestMapper;
+
+    @Autowired
+    private BlogConfig blogConfig;
+
+    @Resource
+    private RedisTemplateConfig redisTemplateConfig;
 
     @Override
     public int deleteByPrimaryKey(Long testId) {
@@ -190,6 +196,7 @@ public class TbTestServiceImpl implements TbTestService {
         }
     }
 
+
     public String getRedisTemplateStringValue() {
         try {
             //1、通过redisTemplate设置值
@@ -294,6 +301,14 @@ public class TbTestServiceImpl implements TbTestService {
         long sum3 = LongStream.range(0L, 10000000000L).reduce(Long::sum).getAsLong();
         System.out.println(System.currentTimeMillis() - start4);
         return 0;
+    }
+
+    public int testRestTemplate(Long tId){
+        String kjcBootUrl = blogConfig.getKjcBoot();
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseObject forObject = restTemplate.getForObject(kjcBootUrl + "/reach/info?id={id}", ResponseObject.class, tId);
+        System.out.println(kjcBootUrl);
+        return 1;
     }
 }
 

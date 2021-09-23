@@ -1,4 +1,4 @@
-package com.jiahui.blog.Mapper;
+package com.jiahui.blog.mapper;
 
 import com.jiahui.blog.pojo.ReservoirPolicy;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-@Mapper
 public interface ReservoirPolicyMapper {
     int deleteByPrimaryKey(Long policyId);
 

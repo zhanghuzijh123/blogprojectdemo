@@ -2,13 +2,16 @@ package com.jiahui.blog.controller;
 
 import com.jiahui.blog.response.ResponseResult;
 import com.jiahui.blog.services.TbTestService;
+import com.jiahui.blog.services.impl.TbTestServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import javax.swing.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Slf4j
 @RestController
@@ -16,6 +19,8 @@ import javax.swing.*;
 public class ApiTestController {
     @Resource
     private TbTestService tbTestService;
+    @Resource
+    private TbTestServiceImpl tbTestServiceImpl;
 
     @GetMapping("/calendar")
     public ResponseResult testCalendarMethod(){
@@ -58,10 +63,10 @@ public class ApiTestController {
     }
 
     @GetMapping("/redisTemplate/getString")
-    public ResponseResult getRedisTemplateStringValue(){
+    public ResponseResult getRedisTemplateStringValue() {
         try {
             return ResponseResult.SUCCESS().setData(tbTestService.getRedisTemplateStringValue());
-        }catch (Exception e){
+        } catch (Exception e) {
             log.error("error");
             return ResponseResult.FAILED(e.getMessage());
         }
@@ -76,4 +81,15 @@ public class ApiTestController {
             return ResponseResult.FAILED(e.getMessage());
         }
     }
+
+    @GetMapping("/restTemplate")
+    public ResponseResult apiToRestTemplate(@RequestParam("tid") Long tid){
+        try {
+            return ResponseResult.SUCCESS().setData(tbTestServiceImpl.testRestTemplate(tid));
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+
 }

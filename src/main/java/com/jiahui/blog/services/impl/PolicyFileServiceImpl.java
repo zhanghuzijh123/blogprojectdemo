@@ -3,7 +3,7 @@ package com.jiahui.blog.services.impl;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
-import com.jiahui.blog.Mapper.PolicyFileMapper;
+import com.jiahui.blog.mapper.PolicyFileMapper;
 import com.jiahui.blog.pojo.PolicyFile;
 import com.jiahui.blog.services.PolicyFileService;
 @Service
