@@ -14,10 +14,13 @@ public class TimeTaskJob {
     @Resource
     private ScheduleStartConfig scheduleStartConfig;
 
-    @Scheduled(cron = "0 0/5 * * * ? ")
+//    @Scheduled(cron = "0 0/5 * * * ? ")
     public void timeTask(){
+        System.out.println("----------------1111111111111111111------------------");
+        System.out.println(scheduleStartConfig.isEnable());
         if (scheduleStartConfig.isEnable()) {
             System.out.println("定时任务开启");
         }
+        System.out.println("-----------------222222222222222222----------------");
     }
 }

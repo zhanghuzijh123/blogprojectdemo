@@ -26,6 +26,15 @@ public class RedisController {
     @GetMapping("/set/add")
     public ResponseResult addRedisToSet(){
         try {
+            return ResponseResult.SUCCESS().setData(testService.addSet());
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/set/add/time")
+    public ResponseResult addRedisToSetByTime(){
+        try {
             return ResponseResult.SUCCESS().setData(testService.addSetRedis());
         }catch (Exception e){
             return ResponseResult.FAILED(e.getMessage());
@@ -36,6 +45,51 @@ public class RedisController {
     public ResponseResult getRedisToSet(){
         try {
             return ResponseResult.SUCCESS().setData(testService.getRedisSet());
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/hashmap/add")
+    public ResponseResult addStringRedis(){
+        try {
+            return ResponseResult.SUCCESS().setData(testService.addRedisString());
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/hashmap/add/time")
+    public ResponseResult addStringRedisByTime(){
+        try {
+            return ResponseResult.SUCCESS().setData(testService.addRedisStringByTime());
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/hashmap/get")
+    public ResponseResult getHashMap(){
+        try {
+            return ResponseResult.SUCCESS().setData(testService.getHashMap());
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/string/add")
+    public ResponseResult addString(){
+        try {
+            return ResponseResult.SUCCESS().setData(testService.addString());
+        }catch (Exception e){
+            return ResponseResult.FAILED(e.getMessage());
+        }
+    }
+
+    @GetMapping("/string/get")
+    public ResponseResult getString(){
+        try {
+            return ResponseResult.SUCCESS().setData(testService.getString());
         }catch (Exception e){
             return ResponseResult.FAILED(e.getMessage());
         }

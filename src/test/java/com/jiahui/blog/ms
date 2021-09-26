@@ -1,0 +1,36 @@
+select * from camera_points where is_delete= 0 and camera_name like '%钳口庙%' union
+select * from camera_points where is_delete= 0 and camera_name like '%青山%' union
+select * from camera_points where is_delete= 0 and camera_name like '%冷坞%' union
+select * from camera_points where is_delete= 0 and camera_name like '%深塘弄%' union
+select * from camera_points where is_delete= 0 and camera_name like '%罗堂山%' union
+select * from camera_points where is_delete= 0 and camera_name like '%新民塘%' union
+select * from camera_points where is_delete= 0 and camera_name like '%下坞源%' union
+select * from camera_points where is_delete= 0 and camera_name like '%大坞桥%' union
+select * from camera_points where is_delete= 0 and camera_name like '%黄坪坞%' union
+select * from camera_points where is_delete= 0 and camera_name like '%田青舍%' union
+select * from camera_points where is_delete= 0 and camera_name like '%桐坑坞%' union
+select * from camera_points where is_delete= 0 and camera_name like '%石坞坑%' union
+select * from camera_points where is_delete= 0 and camera_name like '%申阴寺%' union
+select * from camera_points where is_delete= 0 and camera_name like '%丘坞%' union
+select * from camera_points where is_delete= 0 and camera_name like '%矮坞%' union
+select * from camera_points where is_delete= 0 and camera_name like '%静林寺%' union
+select * from camera_points where is_delete= 0 and camera_name like '%滴水坑%' union
+select * from camera_points where is_delete= 0 and camera_name like '%伍塘湾%' union
+select * from camera_points where is_delete= 0 and camera_name like '%湾下%' union
+select * from camera_points where is_delete= 0 and camera_name like '%小青龙%' union
+select * from camera_points where is_delete= 0 and camera_name like '%里柴%' union
+select * from camera_points where is_delete= 0 and camera_name like '%象鼻岭%' union
+select * from camera_points where is_delete= 0 and camera_name like '%大庄里%' union
+select * from camera_points where is_delete= 0 and camera_name like '%上塘大坑%' union
+
+jdk,jre,jvm
+jdk为java开发工具,Jre为java的开发环境,面向java的使用者而不是开发者。jvm为虚拟机，用来编译java文件
+jdk中包含jre和java开发工具，jre则包含bin和lib等文件夹，其中bin中包含jvm，lib则为Java的类库。
+一个java文件通过javac变异成.class文件之后再由jvm进行编译执行。
+
+this,super
+this是调用本类中的某一个构造方法或者引用本类中的某一变量,super则调用的是父类中的某一个构造方法或者变量,
+this虽然可以调用构造方法,但不能调用两个;super只能作用于方法的第一行，且一般构造方法都有隐式的super调用;
+两者均需放在构造方法的第一行;
+两者不能一起作用于同一个构造方法当中,this调用本类中的另一个构造方法中会存在super，从而导致super复用没有意义;
+两者均不能作用于static环境中;
