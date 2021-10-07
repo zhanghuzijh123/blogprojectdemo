@@ -15,3 +15,15 @@ startup.cmd -m standalone
 nginx
 nginx -s reload //重启nginx
 nginx -t -c 路径 //检验配置文件是否异常
+
+vim:
+i-当前光标前进入输入模式 a-当前光标后进入输入模式 I-当前行开头进入输入模式 A-相反
+h-左 j-下 k-上 L-右
+w-跳转到下一个单词的开头 b-跳转到前一个单词的开头
+gg-跳转至开头 G-跳转至末尾
+ctrl+u-向上翻页 ctrl+d-向下翻页 f-查找
+y-复制 p-粘贴
+yaw-复制当前整一个单词
+d-删除 u-撤销
+caw-替换当前单词切进入输入模式 cc-替换改行进行输入模式
+:wq-在命令模式下保存并退出
