@@ -7,6 +7,7 @@ zhangjiahui
 12345678
 
 mysqldump --single-transaction -u jwsk -h 172.18.39.168 -p jw_reservoir reservoir_patrol_trail | gzip > /data/sprintboot/reservoir/sql/2021-09-29_reservoir_patrol_trail.sql.gz
+source *.sql
 
 redis
 redis-server.exe redis.windows.conf
