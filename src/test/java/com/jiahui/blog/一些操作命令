@@ -16,3 +16,9 @@ startup.cmd -m standalone
 nginx
 nginx -s reload //重启nginx
 nginx -t -c 路径 //检验配置文件是否异常
+
+linux:
+su-切换至root账户
+clear-清屏
+ps -ef | grep 显示所有进程
+kill -9 pid 删除进程
