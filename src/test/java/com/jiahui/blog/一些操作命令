@@ -8,9 +8,44 @@ zhangjiahui
 
 mysqldump --single-transaction -u jwsk -h 172.18.39.168 -p jw_reservoir reservoir_patrol_trail | gzip > /data/sprintboot/reservoir/sql/2021-09-29_reservoir_patrol_trail.sql.gz
 source *.sql
+unzip *.zip
 
 redis
-redis-server.exe redis.windows.conf
+redis-server.exe redis.windows.conf //启动
+hashkey:
+hgetall hashkey 获取当前hashkey下的所有key和value
+hget hashkey key 获取hashkey下的指定key值
+hkeys hashkey 获取hashkey下的所有key
+hvals hashkey 获取hashkey下的所有value
+hlen hashkey 获取hashkey下的长度
+hmget hashkey key1 key2 获取hashkey下的单个key值或多个key值
+hset hashkey key value 对hashkey中的指定key修改value值
+hmset hashkey key1 value key2 value2 对hashkey多个key修改value值
+hsetnx hashkey key value 对hashkey指定的key进行修改,但key已存在value值不进行任何操作
+
+string:
+get\set\del
+incrby key / decrby key 递增或递减(可指定数值)
+incrbyfloat key 递增或递减浮点数值
+append key value 在尾部追加值
+getrange key 起始索引 结束索引 获取指定索引范围内的值
+strlen key 返回键值的长度
+mget\sget key 批量获取或修改key值
+
+set:
+sadd setkey value 对指定setkey添加一个值
+smembers setkey 获取setkey下所有的值
+srem setkey value 删除setkey中指定的值
+spop setkey 随机删除一个setkey中的值
+smove setkey1 setkey2 value 删除setkey1的值，并添加至key2中
+sdiff setkey1 setkey2 求两者的差集
+sdiffstore key1 key2 key3 将差集存入setkey3中
+sinter setkey1 setkey2 求两者的交集
+sinterstore key1 key2 key3 将交集存入setkey3中
+sunion key1 key2 求两者的并集
+scard setkey 返回setkey的个数
+sismember setkey value 判断setkey中是否存在value值
+
 nacos
 startup.cmd -m standalone
 nginx
@@ -22,3 +57,4 @@ su-切换至root账户
 clear-清屏
 ps -ef | grep 显示所有进程
 kill -9 pid 删除进程
+tail -f
