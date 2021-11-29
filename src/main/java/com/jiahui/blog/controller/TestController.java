@@ -373,7 +373,8 @@ public class TestController {
                                 defense -= Math.random() * 5;
                             }
                         }
-                        System.out.println("health:" + health + "," + "defense:" + defense + "," + "floor:" + floor + "," + "dmg:" + dmg + "," + "limitDefense:" + limitDefense + "," + "limitDmg:" + limitDmg);
+                        System.out.println("health:" + health + "," + "defense:" + defense + "," + "floor:" + floor + ","
+                                + "dmg:" + dmg + "," + "limitDefense:" + limitDefense + "," + "limitDmg:" + limitDmg);
                     } else {
                         health = health - (dmg - defense);
                         defense += Math.random() * 10;
@@ -387,7 +388,8 @@ public class TestController {
                                 dmg -= Math.random() * 5;
                             }
                         }
-                        System.out.println("health:" + health + "," + "defense:" + defense + "," + "floor:" + floor + "," + "dmg:" + dmg + "," + "limitDefense:" + limitDefense + "," + "limitDmg:" + limitDmg);
+                        System.out.println("health:" + health + "," + "defense:" + defense + "," + "floor:" + floor + ","
+                                + "dmg:" + dmg + "," + "limitDefense:" + limitDefense + "," + "limitDmg:" + limitDmg);
                     }
                     floor++;
                 } while (floor <= 20);
