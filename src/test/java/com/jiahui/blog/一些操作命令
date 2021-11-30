@@ -1,11 +1,3 @@
-git
-user.name=zhangjiahui
-user.email=zhangjiahui@jw.com
-
-gitlab
-zhangjiahui
-12345678
-
 show columns from 表名
 mysqldump --single-transaction -u jwsk -h 172.18.39.168 -p jw_reservoir reservoir_base_level | gzip > /data/sprintboot/reservoir/sql/2021-10-18_reservoir_base_level.sql.gz
 source *.sql
