@@ -1,17 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cd752787-5098-4864-94fa-5a929a9891e0" name="Default Changelist" comment="2020.9.2 git commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/blogprojectdemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/sob_system_blog.2020-11-11.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/sob_system_blog.2021-04-09.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/sob_system_blog.2021-04-20.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/sob_system_blog.2021-04-21.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/sob_system_blog.2021-04-27.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/Mapper/PolicyFileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/Mapper/ReservoirPolicyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/Mapper/TbTestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/bo/DateTimeDefaultBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/bo/WaterLevelBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/ApiTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/PolicyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/ReservoirPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/TbTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/PolicyFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/ReservoirPolicyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/TbTestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/impl/PolicyFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/impl/ReservoirPolicyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/impl/TbTestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/utils/DateTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/PolicyFileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/ReservoirPolicyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/TbTestMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiahui/blog/text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/979a0c00-6db6-46ab-8acb-524d2d3edc4e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/dao/LabelsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/dao/LabelsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiahui/blog/services/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/BlogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/BlogApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/controller/TestController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Article.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Category.class" beforeDir="false" />
@@ -20,105 +73,13 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/Settings.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiahui/blog/pojo/User.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sob_blog" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="blogprojectdemo" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1802#1803#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#1976#1977#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,244 +90,60 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>fields.each</find>
-      <find>Column</find>
-      <find>it</find>
-      <find>sob</find>
-      <find>blog</find>
-      <find>Log</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/BlogApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Settings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Looper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/KpiDaily.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Article.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/bDailyViewCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseResult.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java" />
-      </list>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="D:/1522130337ZJH/ssm/apache-maven-3.5.4" />
-        <option name="userSettingsFile" value="D:\1522130337ZJH\ssm\apache-maven-3.5.4\conf\settings.xml" />
+        <option name="localRepository" value="D:\myMavenLocal" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings-dev.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blogproject-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blogproject-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="88" />
-    <option name="y" value="2" />
-    <option name="width" value="1788" />
-    <option name="height" value="1028" />
+  <component name="ProjectId" id="1jiIIa7LdmmY2k0iiLoGqrd6kdq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="CatdeaLogs" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jiahui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jiahui" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jiahui" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jiahui" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jiahui" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogprojectdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-            </path>
-            <path>
-              <item name="blogprojectdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-              <item name="schema" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15820312" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -394,6 +171,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cd752787-5098-4864-94fa-5a929a9891e0" name="Default Changelist" comment="" />
+      <changelist id="" name="ignore" comment="" />
       <created>1598253144903</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -415,6 +193,31 @@
       <workItem from="1599618944918" duration="1125000" />
       <workItem from="1599717340238" duration="4102000" />
       <workItem from="1599784869907" duration="5568000" />
+      <workItem from="1604280408956" duration="1066000" />
+      <workItem from="1604282785769" duration="977000" />
+      <workItem from="1604284777304" duration="25000" />
+      <workItem from="1604301794179" duration="16000" />
+      <workItem from="1604363891805" duration="377000" />
+      <workItem from="1604628290759" duration="377000" />
+      <workItem from="1604884928883" duration="19285000" />
+      <workItem from="1604985754800" duration="880000" />
+      <workItem from="1604988860172" duration="9776000" />
+      <workItem from="1605074222883" duration="4068000" />
+      <workItem from="1605150396107" duration="932000" />
+      <workItem from="1605677068970" duration="41000" />
+      <workItem from="1608865040506" duration="6024000" />
+      <workItem from="1613784513626" duration="109000" />
+      <workItem from="1615254966552" duration="2041000" />
+      <workItem from="1616136219126" duration="1378000" />
+      <workItem from="1616476900372" duration="3413000" />
+      <workItem from="1616979114886" duration="26000" />
+      <workItem from="1616994832071" duration="6880000" />
+      <workItem from="1617779522971" duration="983000" />
+      <workItem from="1617946855528" duration="6875000" />
+      <workItem from="1618909468609" duration="4790000" />
+      <workItem from="1618967158772" duration="12868000" />
+      <workItem from="1619311199209" duration="10641000" />
+      <workItem from="1620263758201" duration="7310000" />
     </task>
     <task id="LOCAL-00001" summary="2020.9.2 git commit">
       <created>1599038891203</created>
@@ -468,270 +271,133 @@
     <option name="localTasksCounter" value="8" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65043000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="88" y="2" width="1788" height="1028" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.21878646" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.5011574" side_tool="true" weight="0.24970828" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32908458" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38470453" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.3298611" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.14935823" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32963827" />
-      <window_info anchor="right" id="Bean Validation" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2020.9.8 git commit" />
     <MESSAGE value="2020.9.8 git commit test" />
     <MESSAGE value="2020.9.2 git commit" />
     <option name="LAST_COMMIT_MESSAGE" value="2020.9.2 git commit" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml.xml" />
-    <entry file="jar://D:/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/bind/annotation/RestController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/jdbc/Driver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/979a0c00-6db6-46ab-8acb-524d2d3edc4e/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/BlogApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7594e5fd-c8e0-40fb-83b8-01d29d23bf0d/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/132068df-1cdd-4f65-a73e-844f6ecfb0b9/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://132068df-1cdd-4f65-a73e-844f6ecfb0b9/schema/sob_blog/table/tb_daily_view_count" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Friends.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Categories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="73" column="27" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Category.java" />
-    <entry file="das://132068df-1cdd-4f65-a73e-844f6ecfb0b9/schema/sob_blog/table/tb_user" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/KpiDaily.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/bDailyViewCount.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/DailyViewCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/response/ResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/sob_system_blog.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiahui/blog/controller/user/UserApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1802#1803#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="684" y="344" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1616477267939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="684" y="344" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616477267939" />
+    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1618965871951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1618965871951" />
+    <state width="549" height="466" key="DebuggerActiveHint" timestamp="1618913376001">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="549" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1618913376001" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1617947801548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617947801548" />
+    <state x="1084" y="243" key="FileChooserDialogImpl" timestamp="1620353322115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1084" y="243" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1620353322115" />
+    <state width="1877" height="302" key="GridCell.Tab.0.bottom" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.0.center" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.0.left" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.0.right" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.1.bottom" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.1.center" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.1.left" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.1.right" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.2.bottom" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.2.center" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.2.left" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state width="1877" height="302" key="GridCell.Tab.2.right" timestamp="1620353384230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="302" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620353384230" />
+    <state x="724" y="221" key="RollbackChangesDialog" timestamp="1617947802752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617947802752" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1620353481742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620353481742" />
+    <state x="790" y="389" key="VCS.EditChangelistDialog" timestamp="1620354196467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="389" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620354196467" />
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620352707443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620352707443" />
+    <state x="662" y="254" width="596" height="532" key="find.popup" timestamp="1617947329377">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="254" width="596" height="532" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617947329377" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619515146900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619515146900" />
   </component>
   <component name="masterDetails">
     <states>

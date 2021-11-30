@@ -16,4 +16,6 @@ public interface LabelsDao extends JpaRepository<Labels,String>, JpaSpecificatio
     int deleteLabelById(String labelId);
 
     Labels findOneById(String labelId);
+
+    Labels findOneByName(String name);
 }
